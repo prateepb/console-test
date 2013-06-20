@@ -541,34 +541,34 @@
 							  	<label class="control-label" for="selectError">CPU Affinity</label>
 								<div class="controls">
 								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox1"><span><input type="checkbox" value="option1" id="inlineCheckbox1" checked></span></div> CPU 1
+									<div class="checker" id="uniform-inlineCheckbox1"><span><input type="checkbox" value="option1" id="inlineCheckbox1"></span></div> CPU 1
 								  </label>
 								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox2"><span><input type="checkbox" value="option2" id="inlineCheckbox2" checked></span></div> CPU 2
-								  </label>
-								</div>
-								<div class="controls">
-								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox3"><span><input type="checkbox" value="option1" id="inlineCheckbox3" checked></span></div> CPU 3
-								  </label>
-								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox4"><span><input type="checkbox" value="option2" id="inlineCheckbox4"></span></div> CPU 4
+									<div class="checker" id="uniform-inlineCheckbox2"><span><input type="checkbox" value="option2" id="inlineCheckbox2"></span></div> CPU 2
 								  </label>
 								</div>
 								<div class="controls">
 								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox5"><span><input type="checkbox" value="option1" id="inlineCheckbox5"></span></div> CPU 5
+									<div class="checker" id="uniform-inlineCheckbox1"><span><input type="checkbox" value="option1" id="inlineCheckbox1"></span></div> CPU 3
 								  </label>
 								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox6"><span><input type="checkbox" value="option2" id="inlineCheckbox6"></span></div> CPU 6
+									<div class="checker" id="uniform-inlineCheckbox2"><span><input type="checkbox" value="option2" id="inlineCheckbox2"></span></div> CPU 4
+								  </label>
+								</div>
+								<div class="controls">
+								  <label class="checkbox inline">
+									<div class="checker" id="uniform-inlineCheckbox1"><span><input type="checkbox" value="option1" id="inlineCheckbox1"></span></div> CPU 5
+								  </label>
+								  <label class="checkbox inline">
+									<div class="checker" id="uniform-inlineCheckbox2"><span><input type="checkbox" value="option2" id="inlineCheckbox2"></span></div> CPU 6
 								  </label>
 								</div>	
 								<div class="controls">
 								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox7"><span><input type="checkbox" value="option1" id="inlineCheckbox7" checked></span></div> CPU 7
+									<div class="checker" id="uniform-inlineCheckbox1"><span><input type="checkbox" value="option1" id="inlineCheckbox1"></span></div> CPU 7
 								  </label>
 								  <label class="checkbox inline">
-									<div class="checker" id="uniform-inlineCheckbox8"><span><input type="checkbox" value="option2" id="inlineCheckbox8"></span></div> CPU 8
+									<div class="checker" id="uniform-inlineCheckbox2"><span><input type="checkbox" value="option2" id="inlineCheckbox2"></span></div> CPU 8
 								  </label>
 								</div>	
 
@@ -674,6 +674,29 @@
 
 			</div><!--/row-->
 
+
+
+			<div class="row-fluid sortable">
+				<div class="box span12">
+					<div class="box-header">
+						<h2><i class="halflings-icon list-alt"></i><span class="break"></span>Heap Utilization</h2>
+						<div class="box-icon">
+							<a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+							<a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+							<a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+						 <div id="realtimechart" style="height:190px;"></div>
+						 <p>You can update a chart periodically to get a real-time effect by using a timer to insert the new data in the plot and redraw it.</p>
+						 <p>Time between updates: <input id="updateInterval" type="text" value="" style="text-align: right; width:5em"> milliseconds</p>
+					</div>
+				</div>
+			</div><!--/row-->
+
+
+
+
    
 					
 			</div>
@@ -721,7 +744,6 @@
 				<span class="value">673</span>
 				<span class="chart red">0,3,3,8,3,3,2,7,8,4</span>
 			</div>
-			<!-- end: Content -->
 			
 			<hr>
 			
